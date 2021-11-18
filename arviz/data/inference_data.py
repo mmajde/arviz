@@ -80,7 +80,7 @@ SUPPORTED_GROUPS_ALL = SUPPORTED_GROUPS + SUPPORTED_GROUPS_WARMUP
 InferenceDataT = TypeVar("InferenceDataT", bound="InferenceData")
 
 
-class InferenceDataClass(Mapping[str, xr.Dataset]):
+class InferenceData(Mapping[str, xr.Dataset]):
     """Container for inference data storage using xarray.
 
     For a detailed introduction to ``InferenceData`` objects and their usage, see
